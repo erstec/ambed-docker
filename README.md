@@ -1,3 +1,8 @@
+docker build -t ambed --no-cache .
+docker run --privileged --name=ambed --network host ambed
+docker run --privileged --name=ambed -p 10100:10100 -p 10101-10199:10101-10199 --network bridge ambed
+
+
 # AMBEd Docker Image
 
 This Ubuntu Linux based Docker image allows you to run [LX3JL's](https://github.com/LX3JL) [AMBEd](https://github.com/LX3JL/xlxd/tree/master/ambed) without having to compile any code.
