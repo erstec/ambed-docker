@@ -30,7 +30,7 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v${S6_OVERLA
 RUN tar -C / -Jxpf /tmp/s6-overlay-${ARCH}.tar.xz
 
 # Clone xlxd repository
-ADD --keep-git-dir=true https://github.com/LX3JL/xlxd.git#master ${AMBED_INST_DIR}
+ADD --keep-git-dir=true https://github.com/erstec/xlxd.git#xlx642-custom-2 ${AMBED_INST_DIR}
 
 # Download and extract ftdi driver
 # Raspberry Pi (legacy)
